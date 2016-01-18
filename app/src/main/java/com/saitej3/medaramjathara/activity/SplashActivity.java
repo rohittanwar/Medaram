@@ -24,14 +24,14 @@ public class SplashActivity extends Activity {
         super.onCreate(icicle);
         setContentView(R.layout.activity_splash);
 
-
-        animation = AnimationUtils.loadAnimation(SplashActivity.this, R.anim.anticipate_overshoot);
+        animation = AnimationUtils.loadAnimation(SplashActivity.this, R.anim.fade_in);
+        animation2 = AnimationUtils.loadAnimation(SplashActivity.this, R.anim.anticipate_overshoot);
         animation1 = AnimationUtils.loadAnimation(SplashActivity.this, R.anim.fade_in);
-        animation2 = AnimationUtils.loadAnimation(SplashActivity.this, R.anim.fade_in);
+
         animation.reset();
-        ImageView nitw = (ImageView) findViewById(R.id.nitwlogo);
-        nitw.clearAnimation();
-        nitw.startAnimation(animation);
+        ImageView god = (ImageView) findViewById(R.id.godphoto);
+        god.clearAnimation();
+        god.startAnimation(animation);
 
         animation.setAnimationListener(new Animation.AnimationListener() {
 
@@ -77,10 +77,14 @@ public class SplashActivity extends Activity {
             @Override
             public void onAnimationEnd(Animation animation) {
                 animation2.reset();
-                ImageView god = (ImageView) findViewById(R.id.godphoto);
-                god.setVisibility(View.VISIBLE);
-                god.clearAnimation();
-                god.startAnimation(animation2);
+                ImageView nitw = (ImageView) findViewById(R.id.nitwlogo);
+                nitw.setVisibility(View.VISIBLE);
+                nitw.clearAnimation();
+                nitw.startAnimation(animation2);
+                ImageView wlpd = (ImageView) findViewById(R.id.wl_pd);
+                wlpd.setVisibility(View.VISIBLE);
+                wlpd.clearAnimation();
+                wlpd.startAnimation(animation2);
 
             }
         });
