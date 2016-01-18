@@ -62,6 +62,12 @@
         </activity>
 
         <activity
+            android:name="com.saitej3.medaramjathara.activity.LangActivity"
+            android:label="@string/Lang"
+            android:configChanges="locale|orientation">
+        </activity>
+
+        <activity
             android:name="com.saitej3.medaramjathara.activity.SplashActivity"
             android:label="Splash" >
             <intent-filter>
