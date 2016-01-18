@@ -18,6 +18,7 @@
         android:id="@+id/powered"
         android:text="Powered By"
         android:textSize="20sp"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -31,7 +32,8 @@
         android:layout_height="wrap_content"
         android:src="@drawable/wlpd"
         android:visibility="gone"
-        android:layout_alignBottom="@+id/nitwlogo"
+        android:layout_marginBottom="80dp"
+        android:layout_alignParentBottom="true"
         android:layout_marginLeft="60dp"
         />
 
@@ -41,7 +43,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/nitwlogo"
         android:visibility="gone"
-        android:layout_marginBottom="65dp"
+        android:layout_marginBottom="80dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"

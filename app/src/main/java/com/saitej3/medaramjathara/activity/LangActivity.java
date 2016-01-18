@@ -51,7 +51,7 @@ public class LangActivity extends Activity {
         ItemClickSupport.addTo(mRecyclerView).setOnItemClickListener(new ItemClickSupport.OnItemClickListener() {
             @Override
             public void onItemClicked(RecyclerView recyclerView, int position, View v) {
-                if(position==1)
+                if(position==0)
                 {
 
                     Toast.makeText(getApplication(),
@@ -78,13 +78,14 @@ public class LangActivity extends Activity {
         Configuration conf = res.getConfiguration();
         conf.locale = myLocale;
         res.updateConfiguration(conf, dm);
-        Intent refresh = new Intent(this, LangActivity.class);
+        Intent refresh = new Intent(this, MainActivity.class);
         startActivity(refresh);
+        LangActivity.this.finish();
     }
     private ArrayList<Lang> getDataSet() {
         ArrayList<Lang> results = new ArrayList<Lang>(2);
-        results.add(0, new Lang(R.drawable.wlpd,"English"));
-        results.add(1, new Lang(R.drawable.wlpd,"Telugu"));
+        results.add(0, new Lang(R.drawable.english,"English"));
+        results.add(1, new Lang(R.drawable.telugu,"Telugu"));
         return results;
     }
 }

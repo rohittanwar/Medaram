@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8BC34A</color>
+    <color name="colorPrimaryDark">#558B2F</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#AED581</color>
+
+    <color name="list_row_start_color">#ffffff</color>
+    <color name="list_row_end_color">#ffffff</color>
+    <color name="list_row_hover_start_color">#ebeef0</color>
+    <color name="list_row_hover_end_color">#ebeef0</color>
+
+
+    <!--dialog ok-->
+    <color name="btn_ok_bg">#eceef1</color>
+    <color name="btn_ok">#26ae90</color>
+    <color name="input_tag">#222222</color>
+    <color name="input_tag_hint">#999999</color>
+
+    <color name="direction_color">#40B4F9</color>
+
+    <color name="white">#ffffff</color>
+    <color name="dividerexplist">#000000</color>
+    <color name="backgrey">#e6e7e4</color>
+    <color name="back">#1f1f2d</color>
+    <color name="temp">#1f1f2d</color>
+    <color name="listitem">#25263b</color>
+    <color name="grpitem">#313249</color>
+    <color name="greenback">#558b2f</color>
+    <color name="greengrp">#5f9b35</color>
+
+
+</resources>
