@@ -67,9 +67,10 @@ public class EmergencyFragment extends Fragment {
 
             @Override
             public void onGroupExpand(int groupPosition) {
-                Toast.makeText(getActivity(),
+             /*   Toast.makeText(getActivity(),
                         listDataHeader.get(groupPosition) + " Expanded",
                         Toast.LENGTH_SHORT).show();
+             */
             }
         });
 
@@ -78,10 +79,10 @@ public class EmergencyFragment extends Fragment {
 
             @Override
             public void onGroupCollapse(int groupPosition) {
-                Toast.makeText(getActivity(),
+ /*              Toast.makeText(getActivity(),
                         listDataHeader.get(groupPosition) + " Collapsed",
                         Toast.LENGTH_SHORT).show();
-
+*/
             }
         });
 
@@ -92,7 +93,7 @@ public class EmergencyFragment extends Fragment {
             public boolean onChildClick(ExpandableListView parent, View v,
                                         int groupPosition, int childPosition, long id) {
                 // TODO Auto-generated method stub
-                Toast.makeText(
+           /*     Toast.makeText(
                         getActivity(),
                         listDataHeader.get(groupPosition)
                                 + " : "
@@ -100,6 +101,7 @@ public class EmergencyFragment extends Fragment {
                                 listDataHeader.get(groupPosition)).get(
                                 childPosition), Toast.LENGTH_SHORT)
                         .show();
+                        */
                 return false;
             }
         });
@@ -128,33 +130,29 @@ public class EmergencyFragment extends Fragment {
         listDataHeader.add("Officials");
 
         // Adding child data
-        List<String> top250 = new ArrayList<String>();
-        top250.add("The Shawshank Redemption");
-        top250.add("The Godfather");
-        top250.add("The Godfather: Part II");
-        top250.add("Pulp Fiction");
-        top250.add("The Good, the Bad and the Ugly");
-        top250.add("The Dark Knight");
-        top250.add("12 Angry Men");
+        List<String> ambulance = new ArrayList<String>();
+        ambulance.add("Ram Hospital");
+        ambulance.add("Shyam Hosp");
 
-        List<String> nowShowing = new ArrayList<String>();
-        nowShowing.add("The Conjuring");
-        nowShowing.add("Despicable Me 2");
-        nowShowing.add("Turbo");
-        nowShowing.add("Grown Ups 2");
-        nowShowing.add("Red 2");
-        nowShowing.add("The Wolverine");
+        List<String> police = new ArrayList<String>();
+        police.add("Commisioner");
+        police.add("Inspector");
+        police.add("ASI");
+        police.add("SI");
 
-        List<String> comingSoon = new ArrayList<String>();
-        comingSoon.add("2 Guns");
-        comingSoon.add("The Smurfs 2");
-        comingSoon.add("The Spectacular Now");
-        comingSoon.add("The Canyons");
-        comingSoon.add("Europa Report");
 
-        listDataChild.put(listDataHeader.get(0), top250); // Header, Child data
-        listDataChild.put(listDataHeader.get(1), nowShowing);
-        listDataChild.put(listDataHeader.get(2), comingSoon);
+        List<String> bloodbank = new ArrayList<String>();
+        bloodbank.add("1");
+        bloodbank.add("2");
+
+        List<String> officials= new ArrayList<String>();
+        officials.add("Managment");
+        officials.add("Complaint");
+
+        listDataChild.put(listDataHeader.get(0), ambulance); // Header, Child data
+        listDataChild.put(listDataHeader.get(1), police);
+        listDataChild.put(listDataHeader.get(2), bloodbank);
+        listDataChild.put(listDataHeader.get(3), officials);
     }
 }
 
